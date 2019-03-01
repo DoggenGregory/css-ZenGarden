@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin: 25px 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.intro{
+    text-align: center;
+    background-color: rgb(245, 244, 244);
+    color: black;
+    border-radius: 25px;
+    display: grid;
+    grid-template-areas: "title title"
+                         "bla1  bla1"
+                         "bla2 bla2 ";
+                         
+    header{
+        grid-area: title;
+        font-size:3em;
+
+    }
+    .summary{
+    grid-area: bla1;
+    margin :auto;
+ }   
+        a{
+            color:rgb(18, 3, 104);
+        }
+}
+.main{
+    display: grid ;
+    grid-template-areas: "a1 a1 a2 a2" ". a3 a3 ." "a4 a4 a4 a4" "a5 a5 a5 a5";
+    grid-column-gap: 25px;
+    .explanation{
+        grid-area: a1;
+
+    }
+    .participation{
+        grid-area: a2;
+
+    }
+    .benefits{
+        text-align: center;
+
+        grid-area: a3;
+
+    }
+    .requirements{
+        text-align: center;
+        margin: 0 35px;
+
+        grid-area: a4;
+    }
+    footer{
+        grid-area: a5;
+        margin-top:100px;
+
+        text-align: center;
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.wrapper{
+    display: grid;
+    grid-template-areas: "aa ab  ad";
+    color : green;
+/*     text-align: center; */
+    ul{list-style-type: none;}
+
+    .design-selection{
+        grid-area: aa ;
+        list-style-type: none;
+        
+    }
+    .design-archives{
+        grid-area: ab ;
+    }
+    }
+    .design-archives{
+        grid-area: ad ;
+    }
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+h3{
+    font-size: 2em;
+}
+
+a{
+    color:greenyellow;
+}
+a:hover{
+    color:rgb(0, 245, 102);
+}

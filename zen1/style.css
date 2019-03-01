@@ -1,0 +1,87 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 25px 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.intro {
+  text-align: center;
+  display: grid;
+  grid-template-areas: "title title" "bla1  bla1" "bla2 bla2 ";
+}
+.intro header {
+  background-color: #f5f4f4;
+  color: black;
+  border-radius: 25px;
+  grid-area: title;
+  font-size: 3em;
+}
+.intro .summary {
+  grid-area: bla1;
+  margin: auto;
+}
+.intro a {
+  color: #120368;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "a1 a1 a2 a2" ". a3 a3 ." "a4 a4 a4 a4" "a5 a5 a5 a5";
+  grid-column-gap: 25px;
+}
+.main .explanation {
+  grid-area: a1;
+}
+.main .participation {
+  grid-area: a2;
+}
+.main .benefits {
+  text-align: center;
+  grid-area: a3;
+}
+.main .requirements {
+  text-align: center;
+  margin: 0 35px;
+  grid-area: a4;
+}
+.main footer {
+  grid-area: a5;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas: "aa ab  ad";
+  color: green;
+  /*     text-align: center; */
+}
+.wrapper ul {
+  list-style-type: none;
+}
+.wrapper .design-selection {
+  grid-area: aa;
+  list-style-type: none;
+}
+.wrapper .design-archives {
+  grid-area: ab;
+}
+
+.design-archives {
+  grid-area: ad;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+a {
+  color: greenyellow;
+}
+
+a:hover {
+  color: #00f566;
+}
+
+/*# sourceMappingURL=style.css.map */

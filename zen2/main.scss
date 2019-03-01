@@ -1,0 +1,125 @@
+@mixin background-white {
+    background-color: rgba(255, 255, 255, 0.841);
+    padding: 7px;
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+    border: solid rgba(0, 0, 0, 0.9) 3px ;
+    border-radius: 12px;
+
+}
+@keyframes shadow{
+    
+    0%{    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);}
+    100%{  box-shadow: 5px 25px 2px 1px rgba(0, 0, 0, 0.7)}
+}
+
+
+
+body{
+    background-image: url(site-background.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    margin: 0 25px;
+        
+}
+.page-wrapper{
+    display: grid;
+    grid-template-areas:    "t t"
+                            "m w";
+                            grid-gap: 35px;
+}
+.intro{
+    grid-area: t;
+    grid-gap: 35px;
+    display: grid;
+    grid-template-areas:    "b b b"
+                            "t p p"
+}
+
+
+    header{
+        grid-area: b;
+        @include background-white;
+        text-align: center;
+        margin-top:25px;
+        h1{font-size:3em;
+       }
+        h2{
+            font-size:2em;
+        }
+    }
+    .summary{
+        grid-area: t;
+        text-align: center;
+        margin: auto;
+        @include background-white;
+
+ }
+      
+ .preamble{
+        grid-area: p;
+        @include background-white;
+ 
+ }
+
+.main{
+    grid-area: m;
+    .explanation{
+        @include background-white;
+    }
+    .participation{
+        @include background-white;
+    }
+    .benefits{
+        @include background-white;
+    }
+    .requirements{
+        @include background-white;
+    }
+    footer{
+        
+        @include background-white;
+    }
+}
+.zen-resources{
+     
+        @include background-white;
+
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+.wrapper{
+    grid-area: w;
+    
+
+    ul{list-style-type: none;}
+
+    .design-selection{
+        
+        @include background-white;
+    }
+    .design-archives{
+       
+
+        @include background-white;
+    }
+    }
+    .design-archives{
+        
+        @include background-white;
+    }
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+h3{
+}
+
+a{
+}
+a:hover{
+    color:black;
+}

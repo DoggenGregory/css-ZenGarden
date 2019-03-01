@@ -1,0 +1,148 @@
+@keyframes shadow {
+  0% {
+    box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  }
+  100% {
+    box-shadow: 5px 25px 2px 1px rgba(0, 0, 0, 0.7);
+  }
+}
+body {
+  background-image: url(site-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 0 25px;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-areas: "t t" "m w";
+  grid-gap: 35px;
+}
+
+.intro {
+  grid-area: t;
+  grid-gap: 35px;
+  display: grid;
+  grid-template-areas: "b b b" "t p p";
+}
+
+header {
+  grid-area: b;
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 25px;
+}
+header h1 {
+  font-size: 3em;
+}
+header h2 {
+  font-size: 2em;
+}
+
+.summary {
+  grid-area: t;
+  text-align: center;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+
+.preamble {
+  grid-area: p;
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+
+.main {
+  grid-area: m;
+}
+.main .explanation {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+.main .participation {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+.main .benefits {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+.main .requirements {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+.main footer {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+
+.zen-resources {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+
+.wrapper {
+  grid-area: w;
+}
+.wrapper ul {
+  list-style-type: none;
+}
+.wrapper .design-selection {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+.wrapper .design-archives {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+
+.design-archives {
+  background-color: rgba(255, 255, 255, 0.841);
+  padding: 7px;
+  box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.7);
+  border: solid rgba(0, 0, 0, 0.9) 3px;
+  border-radius: 12px;
+}
+
+a:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */
